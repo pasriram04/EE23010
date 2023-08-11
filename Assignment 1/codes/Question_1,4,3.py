@@ -20,10 +20,10 @@ def verify_circumcentre_condition(A, B, C, x):
     # Calculate vectors 
     vector_left = (vector_x - (vector_B + vector_C) / 2)
     vector_right = vector_B - vector_C
-    LHS = np.matmul(np.vector_left.transpose(),vector_right)
+    LHS = np.matmul(np.transpose(vector_left),vector_right)
     
     # Check if the dot product is zero
-    #print(LHS)
+    # print(LHS)
     if np.isclose(LHS,0,1.0e-12):
         return True
     else:
