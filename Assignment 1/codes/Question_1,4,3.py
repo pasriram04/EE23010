@@ -17,11 +17,10 @@ def verify_circumcentre_condition(A, B, C, x):
     vector_C = np.array(C)
     vector_x = np.array(x)
     
-    # Calculate midpoint of B and C
-    midpoint_BC = (vector_B + vector_C) / 2
-    
-    # Calculate LHS
-    LHS = np.dot((vector_x - ((vector_B + vector_C) / 2)), vector_B - vector_C)
+    # Calculate vectors 
+    vector_left = (vector_x - (vector_B + vector_C) / 2)
+    vector_right = vector_B - vector_C
+    LHS = np.matmul(np.vector_left.transpose(),vector_right)
     
     # Check if the dot product is zero
     #print(LHS)
