@@ -21,7 +21,7 @@ GF = np.linalg.norm(F-G)
 AG = np.linalg.norm(G-A)
 GD = np.linalg.norm(D-G)
 
-# Printing the ratios
+# Printing the ratios (which must be equal to 2)
 print("BG/GE = ",(BG/GE))
 print("CG/GF = ",(CG/GF))
 print("AG/GD = ",(AG/GD))
