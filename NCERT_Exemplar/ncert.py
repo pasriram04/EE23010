@@ -16,7 +16,7 @@ count_apoorv = 0
 count_peehu = 0
 
 # Calculating products and squares and counting them    
-for i in range(0,100):                                      
+for i in range(0,1000):                                      
         if(apoorv_1[i]apoorv_2[i] == 36):                          
                 count_apoorv = count_apoorv + 1                     
         if(peehu[i]*2 == 36):                                      
