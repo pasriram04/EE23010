@@ -28,12 +28,18 @@ for i in range(0,37):
 for i in range(0,37):
         print("Probability of Peehu getting a ",i," as a square is ", (count_peehu[i]/10000.0))
 
-# Initializing Arrays to store horizontal data and probability vertically
+# Initializing Arrays to store horizontal data and probability vertically, and also CDFs
 x = [0]*37
+cdf_apoorv = [0]*37
+cdf_peehu = [0]*37
 for i in range(0,37):
         x[i] = i
         count_apoorv[i] = count_apoorv[i]/10000.0
         count_peehu[i] = count_peehu[i]/10000.0
+        if(i>0):
+                cdf_apoorv[i] = cdf_apoorv[i-1] + count_apoorv[i]
+                cdf_peehu[i] = cdf_peehu[i-1] + count_peehu[i]
+
 
 # Plotting bar graphs using random variables
 plt.bar(x, count_apoorv)
@@ -42,8 +48,23 @@ plt.ylabel('Probability - Apoorv')
 plt.title('Probability Distribution')
 plt.show()
 
+
 plt.bar(x, count_peehu)
 plt.xlabel('Square of dice value')
 plt.ylabel('Probability - Peehu')
+plt.title('Probability Distribution')
+plt.show()
+
+
+plt.bar(x, cdf_apoorv)
+plt.xlabel('Product of dice values')
+plt.ylabel('CDF - Apoorv ')
+plt.title('Probability Distribution')
+plt.show()
+
+
+plt.bar(x, cdf_peehu)
+plt.xlabel('Square of dice value')
+plt.ylabel('CDF - Peehu')
 plt.title('Probability Distribution')
 plt.show()
