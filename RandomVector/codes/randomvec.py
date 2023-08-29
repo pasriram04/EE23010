@@ -5,8 +5,7 @@ import matplotlib.image as mpimg
 import math
 
 # Local Imports
-sys.path.insert(0,r'C:\Users\hp\Desktop\Coding\RandomVector\codes\CoordGeo') 
-# To be changed when uploading - 6 addresses (5 figures and sys.path.insert())
+sys.path.insert(0,'codes\CoordGeo') 
 # Check all final answers
 from line.funcs import *
 from triangle.funcs import *
@@ -120,7 +119,7 @@ plt.ylabel('$y$')
 plt.legend(loc='best')
 plt.grid()
 plt.axis('equal')
-plt.savefig(r'C:\Users\hp\Desktop\Coding\RandomVector\plots\Figure1.png')
+plt.savefig('plots\Figure1.png')
 
 print("\nSection 1.2 - Median: ")
 # Question 2.1
@@ -221,7 +220,7 @@ plt.ylabel('$y$')
 plt.legend(loc='best')
 plt.grid() # minor
 plt.axis('equal')
-plt.savefig(r'C:\Users\hp\Desktop\Coding\RandomVector\plots\Figure2.png')
+plt.savefig('plots\Figure2.png')
 
 # Section 3
 print("\nSection 1.3 - Altitude:")
@@ -488,7 +487,7 @@ plt.ylabel('$y$')
 plt.legend(loc='best')
 plt.grid() # minor
 plt.axis('equal')
-plt.savefig(r'C:\Users\hp\Desktop\Coding\RandomVector\plots\Figure3.png')
+plt.savefig('plots\Figure3.png')
 
 # Figure Q1.4
 plt.clf()
@@ -524,7 +523,7 @@ plt.ylabel('$y$')
 plt.legend(loc='best')
 plt.grid() # minor
 plt.axis('equal')
-plt.savefig(r'C:\Users\hp\Desktop\Coding\RandomVector\plots\Figure4.png')
+plt.savefig('plots\Figure4.png')
 
 # Figure Q1.5
 plt.clf()
@@ -557,4 +556,4 @@ plt.ylabel('$y$')
 plt.legend(loc='best')
 plt.grid() # minor
 plt.axis('equal')
-plt.savefig(r'C:\Users\hp\Desktop\Coding\RandomVector\plots\Figure5.png')
+plt.savefig('plots\Figure5.png')
